@@ -1,9 +1,10 @@
 location @apache {
-  proxy_pass http://127.0.0.1:8081;
+  proxy_pass http://apache_host:$apache_port;
 }
 location ~ .php$ {
-  proxy_pass http://127.0.0.1:8081;
+  proxy_pass http://apache_host:$apache_port;
 }
+include inc/proxy.inc;
 
 set $cache_uri $request_uri;
 
@@ -45,4 +46,3 @@ location ~* .(ogg|ogv|svg|svgz|eot|otf|woff|mp4|ttf|css|rss|atom|js|jpg|jpeg|gif
 }
 
 include inc/deny-dot-files.inc;
-include inc/proxy.inc;
