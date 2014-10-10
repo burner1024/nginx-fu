@@ -44,5 +44,5 @@ location ~* .(ogg|ogv|svg|svgz|eot|otf|woff|mp4|ttf|css|rss|atom|js|jpg|jpeg|gif
   access_log off;
 }
 
-include inc/deny.inc;
+include inc/deny-dot-files.inc;
 include inc/proxy.inc;
