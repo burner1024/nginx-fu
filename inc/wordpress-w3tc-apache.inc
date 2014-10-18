@@ -1,8 +1,8 @@
 location @apache {
-  proxy_pass http://apache_host:$apache_port;
+  proxy_pass http://$apache_host:$apache_port;
 }
 location ~ .php$ {
-  proxy_pass http://apache_host:$apache_port;
+  proxy_pass http://$apache_host:$apache_port;
 }
 include inc/proxy.inc;
 
