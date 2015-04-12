@@ -67,3 +67,4 @@ location ~ .php$ {
         fastcgi_pass   $fastcgi_host:$fastcgi_port;
 }
 
+include inc/deny-dot-files.inc;
