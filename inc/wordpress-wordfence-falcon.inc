@@ -57,6 +57,8 @@ if ($wordfenceCacheOn = 1) {
 }
 # END Wordfence Rules
 
+include inc/static-cache.inc;
+
 location / {
   try_files $uri $uri/ /index.php?$args;
 }
