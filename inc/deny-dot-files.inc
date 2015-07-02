@@ -1,3 +1,3 @@
 location ~ /\. {
-    deny  all;
+  deny  all;
 }
