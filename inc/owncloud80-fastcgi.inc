@@ -46,7 +46,7 @@ location ~ \.php(?:$|/) {
   fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
   fastcgi_param PATH_INFO $fastcgi_path_info;
   fastcgi_param HTTPS $fastcgi_https; # REQUIRES fastcgi.conf
-  fastcgi_pass $fpm_host:$fpm_port;
+  fastcgi_pass $fastcgi_host:$fastcgi_port;
 }
 
 # Optional: set long EXPIRES header on static assets
