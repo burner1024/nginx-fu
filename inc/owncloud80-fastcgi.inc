@@ -1,3 +1,5 @@
+include inc/defaults.inc;
+
 # set max upload size
 client_max_body_size 10G;
 fastcgi_buffers 64 4K;
