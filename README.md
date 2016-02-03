@@ -18,17 +18,6 @@ server {
   access_log  /var/log/nginx/example1.com-access.log combined;
   error_log  /var/log/nginx/example1.com-error.log;
   root /var/www/html/example1.com;
-
-  location / {
-    try_files $uri $uri/ /index.php?$args;
-  }
-  location ~ \.php$ {
-    include fastcgi_params;
-    fastcgi_param SCRIPT_FILENAME $document_root/$fastcgi_script_name;
-    fastcgi_pass   127.0.0.1:9000;
-    try_files $uri =404;
-  }
-  include inc/deny-dot-files.inc;
-
+  include inc/wordpress-w3tc-fastcgi.inc;
 }
 ```
