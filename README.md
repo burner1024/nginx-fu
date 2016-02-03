@@ -14,7 +14,6 @@ Wordpress with W3 Total Cache (page enhanced)
 server {
   listen     80;
   server_name  example1.com;
-  charset utf-8;
   access_log  /var/log/nginx/example1.com-access.log combined;
   error_log  /var/log/nginx/example1.com-error.log;
   root /var/www/html/example1.com;
