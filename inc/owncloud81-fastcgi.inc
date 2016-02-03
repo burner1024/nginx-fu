@@ -1,5 +1,5 @@
 include inc/defaults.inc;
-include inc/deny-dot-files.inc;
+#include inc/deny-dot-files.inc;
 
 # Add headers to serve security related headers
 add_header Strict-Transport-Security "max-age=15768000; includeSubDomains; preload;";
