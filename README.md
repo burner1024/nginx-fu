@@ -9,7 +9,7 @@ A collection of snippets to use with Nginx
 * Use the includes in your vhost
 
 #### Example
-Wordress with W3 Total Cache (page enhanced)
+Wordpress with W3 Total Cache (page enhanced)
 ```
 server {
   listen     80;
