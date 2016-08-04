@@ -1,6 +1,6 @@
-proxy_connect_timeout   59s;
-proxy_read_timeout      1800s;
-proxy_send_timeout      1800s;
+proxy_connect_timeout   59;
+proxy_read_timeout      1800;
+proxy_send_timeout      1800;
 proxy_set_header        Referer $http_referer;
 proxy_set_header        Host   $host;
 proxy_set_header        Cookie $http_cookie;
