@@ -9,3 +9,7 @@ set $fastcgi_port 9000;
 #Apache backend
 set $apache_host 127.0.0.1;
 set $apache_port 8081;
+
+#UWSGI
+set $uwsgi_host 127.0.0.1;
+set $uwsgi_port 9080;
