@@ -1,4 +1,4 @@
-location ~ .well-known {}
+location ~ /.well-known {}
 location ~ /\. {
   deny  all;
 }
